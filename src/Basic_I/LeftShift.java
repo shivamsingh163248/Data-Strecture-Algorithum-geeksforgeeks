@@ -7,6 +7,8 @@ public class LeftShift {
 		
 		// creating the left shift 
 		System.out.println(5>>1);
+		// learning the right and left shift operator 
+		
 
 	}
 
