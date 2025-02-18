@@ -9,6 +9,9 @@ public class LinkListMain {
 		obj.insurt(44);
 		obj.insurt(48);
 		obj.insurt(42);
+		obj.insurt(48);
+		obj.insurt(42);
+		
 		
 		// creating the print function 
 		obj.print();
