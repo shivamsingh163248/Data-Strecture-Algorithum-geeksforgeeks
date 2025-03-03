@@ -16,6 +16,10 @@ public class LinkLists {
 		while (Nodes.next != null) {
 			Nodes = Nodes.next ; 
 		}
+		// now linking the node 
+		Node<Integer>NewNode = new Node<Integer>(data) ; 
+		Nodes.next = NewNode ; 
+		
 	}
 	  
 }
@@ -26,7 +30,7 @@ public class LinkLists {
 	 
 	 // creating the while loop 
 	 Node<Integer>Data = head ; 
-	 while (Data.next != null) {
+	 while (Data != null) {
 		System.out.println(Data.deta);
 		Data = Data.next ; 
 	}

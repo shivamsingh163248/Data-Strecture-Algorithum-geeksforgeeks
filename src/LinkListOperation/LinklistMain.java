@@ -3,7 +3,12 @@ package LinkListOperation;
 public class LinklistMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		LinkLists data = new LinkLists() ; 
+		data.insert(5);
+		data.insert(7);
+		
+		data.print(); 
 
 	}
 
