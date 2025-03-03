@@ -12,6 +12,7 @@ public class LeftShift {
 		System.out.println(5<<1);
 		// check what will be the ans 
 		
+		
 
 	}
 
