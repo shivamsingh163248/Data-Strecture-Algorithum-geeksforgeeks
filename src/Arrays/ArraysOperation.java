@@ -51,6 +51,17 @@ public class ArraysOperation {
 		return NewArrys ; 
 	}
 	
+	
+	// creating the function print arrays 
+	public static void  ArrysPrint(int[]arr) {
+		// creating the loop for the print 
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+" ");
+		}
+	}
+	// creating the function taking the input as the user of the arrays 
+	
+	
 
 	public static void main(String[] args) {
 		
