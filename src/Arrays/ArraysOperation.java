@@ -62,6 +62,25 @@ public class ArraysOperation {
 		return NewArrys ; 
 	}
 	
+	// creating the deletion 
+	public static int[] deletion(int[]arr , int index) {
+		arr[index] = 0 ; 
+		return arr ; 
+	}
+	
+	// creating the searching element 
+	public static int Searching(int[]arr , int num) {
+		// hear creating the loop for the searching the element 
+		int index = -1 ; 
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == num) {
+				index =  i ; 
+			}
+		}
+		return index ; 
+	}
+	
+	
 	
 	// creating the function print arrays 
 	public static void  ArrysPrint(int[]arr) {
