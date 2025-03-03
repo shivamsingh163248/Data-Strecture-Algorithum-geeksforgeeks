@@ -15,13 +15,25 @@ public class ArraysOperation {
 		// using the loop for the find the index 
 		int index = 0 ; 
 		for (int i = 0; i < arr.length; i++) {
-			if(arr[i] = 0 ) {
+			if(arr[i] != 0 ) {
 				index = i ; 
-				br
 			}
 			
 		}
 	}
+	
+	public static int[] DynamicArrays(int[]arr) {
+		// copy the arrays and creating the double size  and the returning the arrays 
+		int Arrys_lenght = arr.length ; 
+		// creating the new arrays of the double length
+		int NewArrys[] = new int[Arrys_lenght*2] ; 
+		// now copy the element 
+		for (int i = 0; i < arr.length; i++) {
+			NewArrys[i] = arr[i] ; 
+		}
+		return NewArrys ; 
+	}
+	
 
 	public static void main(String[] args) {
 		
