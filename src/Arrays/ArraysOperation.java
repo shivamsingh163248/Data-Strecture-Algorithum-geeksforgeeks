@@ -20,11 +20,20 @@ public class ArraysOperation {
 				index = i ; 
 			}		
 		}
+		System.out.println(index);
 		
 		
 		if(index == 0 ) {
-			arr[index] = num ; 
-			return arr ; 
+			if(index+1 == arr.length) {
+				// calling the dynamic arrays 
+				arr = DynamicArrays(arr) ; 
+				arr[index+1] = num ; 
+				return arr ;
+			}else {
+				arr[index] = num ; 
+				return arr ; 
+			}
+			
 		}else {
 			
 			if(index+1 == arr.length) {
@@ -83,7 +92,14 @@ public class ArraysOperation {
 
 	public static void main(String[] args) {
 		
+//		int[]input = ArrysInput() ;
+//		ArrysPrint(input);
+		System.out.println(" ");
+		int[] shi = {0} ; 
 		
+		
+		int[]next = insertNext(7,shi ) ; 
+		ArrysPrint(next);
 
 	}
 
