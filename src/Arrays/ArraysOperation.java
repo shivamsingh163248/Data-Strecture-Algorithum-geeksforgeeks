@@ -10,16 +10,18 @@ public class ArraysOperation {
 		
 	}
 	public static int[] insertNext(int num , int[]arr) {
-		
 		// find the index where the arrays is the blank so i know the default values is 0 ; 
 		// using the loop for the find the index 
 		int index = 0 ; 
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length; i++) {	
 			if(arr[i] != 0 ) {
 				index = i ; 
-			}
+			}		
+		}
+		if(index+1 == arr.length) {
 			
 		}
+		
 	}
 	
 	public static int[] DynamicArrays(int[]arr) {
