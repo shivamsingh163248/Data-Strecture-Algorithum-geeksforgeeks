@@ -18,19 +18,24 @@ public class ArraysOperation {
 				index = i ; 
 			}		
 		}
-		if(index+1 == arr.length) {
-			// calling the dynamic arrays 
-			arr = DynamicArrays(arr) ; 
-			arr[index+1] = num ; 
-		}
+		
 		
 		if(index == 0 ) {
 			arr[index] = num ; 
+			return arr ; 
 		}else {
+			
+			if(index+1 == arr.length) {
+				// calling the dynamic arrays 
+				arr = DynamicArrays(arr) ; 
+				arr[index+1] = num ; 
+				return arr ; 
+			}
 			arr[index+1] = num ; 
+			return arr ; 
 		}
 		
-		return arr ; 
+		
 		
 	}
 	
