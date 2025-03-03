@@ -1,5 +1,7 @@
 package Arrays;
 
+import java.util.Scanner;
+
 public class ArraysOperation {
 	
 	 // arrays insertion 
@@ -60,7 +62,23 @@ public class ArraysOperation {
 		}
 	}
 	// creating the function taking the input as the user of the arrays 
-	
+	public static int[] ArrysInput() {
+		// creating the new arrays 
+		System.out.println("Enter the size of the arrys ");
+		// creating the scanner function 
+		Scanner input = new Scanner(System.in) ; 
+		int arraySize = input.nextInt() ; 
+		// creating the arrys 
+		int[]arr = new int[arraySize] ; 
+		
+		// creating the loop of the taking the input of the array
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println("enter the number at index : "+ i);
+			int number = input.nextInt() ; 
+			arr[i] =  number ; 
+		}
+		return arr ; 
+	}
 	
 
 	public static void main(String[] args) {
