@@ -35,12 +35,13 @@ public class Binneary_Search {
 		int right = arr.length -1 ; 
 		int left = 0 ; 
 		// find the mid 
-		int mid = left + (right - left) / 2  ; // creating the over flow 
+	 // creating the over flow 
 		
 		
 		// creating the loop left and right greater and equal to    
 		while (left <= right) {
-			
+			int mid = left + (right - left) / 2  ;
+			System.out.println("laft : "+left+"  right : "+right+"   mid :"+mid);
 			// creating condition to update 
 			if (arr[mid] == target) {
 				return mid ; 
@@ -49,6 +50,9 @@ public class Binneary_Search {
 			}else {
 				right = mid-1 ; 
 			}
+			 
+			
+			
 			
 		}
 		return -1 ; 
@@ -60,6 +64,9 @@ public class Binneary_Search {
 		// TODO Auto-generated method stub
        System.out.println(userinput(65));
        // calling the function 
+       int[]arr = {1,2,3,4,5,6,7,8,9} ; 
+     int val =    binnary_search(arr, 9) ; 
+     System.out.println(val);
 	}
 
 }
