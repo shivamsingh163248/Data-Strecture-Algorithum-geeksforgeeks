@@ -69,10 +69,25 @@ public class LinkListOperation<T>{
 		return false ; 
 	}
 	
-	public void addingAtIndex(int index) {
+	public void  addingAtIndex(int index) {
+		
+		// creating the for loop for the 
+		// check for the invalid
+		if (index > this.length) {
+			System.out.println("Invalid Index");
+			return  ; 
+		}
+		
+		//  creatng the copy of the head
+		for (int i = 0; i < index; i++) {
+			
+		}
 		
 	}
 	
 	// find the total length of the link list 
+	public int LinkList_Length() {
+		return this.length ; 
+	}
 
 }

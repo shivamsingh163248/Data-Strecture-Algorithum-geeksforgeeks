@@ -15,6 +15,9 @@ public class Main {
 		// now print 
 		opeartion.print();
 		
+		// printing the length
+		System.out.println("lenght : "+opeartion.LinkList_Length());
+		
 		System.out.println(opeartion.search(8));
 		System.out.println(opeartion.search(6));
 		System.out.println(opeartion.search(10));
