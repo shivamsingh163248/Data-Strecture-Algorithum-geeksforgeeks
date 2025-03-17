@@ -33,5 +33,17 @@ public class LinkListOperation<T>{
 	}
 	
 	// creating the function for the iterating 
+	public void print() {
+		
+		// head is my the insitial node 
+		// creating the while loop 
+		Node<T>copy_Node = head ; 
+		while (copy_Node != null) {
+			// printing the data 
+			System.out.println(copy_Node.data);
+			copy_Node = copy_Node.Next ; 
+		}
+		
+	}
 
 }
