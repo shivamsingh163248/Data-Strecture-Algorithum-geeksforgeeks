@@ -1,5 +1,7 @@
 package LinklistMethod;
 
+import java.rmi.server.Operation;
+
 public class Main {
 	public static void main(String[] args) {
 		
@@ -12,6 +14,10 @@ public class Main {
 		
 		// now print 
 		opeartion.print();
+		
+		System.out.println(opeartion.search(8));
+		System.out.println(opeartion.search(6));
+		System.out.println(opeartion.search(10));
 		
 	}
 
