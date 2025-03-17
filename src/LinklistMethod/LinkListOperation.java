@@ -4,6 +4,7 @@ public class LinkListOperation<T>{
 	
 	// creating the head of the linklist 
 	private  Node<T>head ;
+	private int length = 0 ; 
 	
 	// create the insert operation 
 	public void insert(T data) {
@@ -13,6 +14,7 @@ public class LinkListOperation<T>{
 		if (head == null) {
 			// create a node for the head 
 			head = new Node<T>(data);
+			length++ ; 
 		}else {
 			
 			// create the copy of the node and then the chack k of the last node 
@@ -26,6 +28,7 @@ public class LinkListOperation<T>{
 			// creating the new node and attached in the next 
 			Node<T>New_node = new Node<T>(data) ; 
 			copy_head.Next = New_node ; 
+			length++ ; 
 		}
 		
 		
@@ -65,5 +68,11 @@ public class LinkListOperation<T>{
 		}
 		return false ; 
 	}
+	
+	public void addingAtIndex(int index) {
+		
+	}
+	
+	// find the total length of the link list 
 
 }
