@@ -3,7 +3,7 @@ package LinklistMethod;
 public class LinkListOperation<T>{
 	
 	// creating the head of the linklist 
-	Node<T>head ;
+	private  Node<T>head ;
 	
 	// create the insert operation 
 	public void insert(T data) {
@@ -44,6 +44,26 @@ public class LinkListOperation<T>{
 			copy_Node = copy_Node.Next ; 
 		}
 		
+	}
+	
+	
+	public boolean search(T targer) {
+		
+		// creating the searching method of the linklist 
+		// creating the while loop 
+		// taking the copy of the head 
+		Node<T>copy = head ; 
+		while (copy != null) {
+			// creating the if fount then return true other wise false 
+			if (copy.data == targer) {
+				return true ; 
+			}
+			copy = copy.Next ; 
+			
+			// for the iterating the node 
+			
+		}
+		return false ; 
 	}
 
 }
