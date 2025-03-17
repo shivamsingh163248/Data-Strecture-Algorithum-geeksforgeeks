@@ -19,7 +19,7 @@ public class LinkListOperation<T>{
 			Node<T>copy_head = head ; 
 			// Iterate 
 			// uisng the loop using the while loop 
-			while (copy_head != null ) {
+			while (copy_head.Next != null ) {
 				// find the last node 
 				copy_head = copy_head.Next ; 
 			}
