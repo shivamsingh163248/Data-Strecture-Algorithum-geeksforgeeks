@@ -95,5 +95,24 @@ public class Bank {
 		return null ; 
 	}
 	
+	
+	// now creating the function to deposit and withdraw 
+	
+	public void deposit(int Account  , int Amount ) {
+		
+		// creating  the exception hadaling 
+		try {
+			
+			// calling the function 
+			Bnak_User user = find_Account_number(Account);
+			// calling the function 
+			user.Deposit_Amount(Amount);
+			
+		} catch (Exception e) {
+			
+			System.out.println("Not find account number ");
+		}
+	}
+	
 
 }

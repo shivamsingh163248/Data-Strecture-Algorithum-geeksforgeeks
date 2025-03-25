@@ -35,6 +35,7 @@ public class Bnak_User {
 	// now creating the function to deposit the 
 	public void Deposit_Amount(int Amount) {
 		this.user_amount += Amount ; 
+		System.out.println("Successful deposit");
 	}
 	
 	public void Widrawl_Amount(int Amouunt) {
