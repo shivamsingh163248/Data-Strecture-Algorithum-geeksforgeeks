@@ -36,7 +36,7 @@ public class Bank {
 		// create a the for each loop 
 		for (Bnak_User bnak_User : user_account) {
 			
-			System.out.println("Account_number : "+bnak_User.getAccount_number()+" Account_name : "+bnak_User.getUser_name()+"Account_balnace : "+bnak_User.Current_Amount());
+			System.out.println("Account_number : "+bnak_User.getAccount_number()+" Account_name : "+bnak_User.getUser_name()+"  Account_balnace : "+bnak_User.Current_Amount());
 		}
 		
 		
@@ -62,7 +62,7 @@ public class Bank {
 				if(bnak_User.getAccount_number() == account_number) {
 					
 					// print all the details 
-					System.out.println("Account_number : "+bnak_User.getAccount_number()+" Account_name : "+bnak_User.getUser_name()+"Account_balnace : "+bnak_User.Current_Amount());
+					System.out.println("Account_number : "+bnak_User.getAccount_number()+" Account_name : "+bnak_User.getUser_name()+"  Account_balnace : "+bnak_User.Current_Amount());
 				    obj = bnak_User ; 
 				    return  ; 
 				

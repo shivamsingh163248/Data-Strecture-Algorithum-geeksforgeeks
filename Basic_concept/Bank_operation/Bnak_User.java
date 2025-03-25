@@ -47,7 +47,8 @@ public class Bnak_User {
 				// printing the not widrawl 
 				System.err.println("you have not a enouth ");	
 			}else {
-				this.user_amount -= Amouunt ; 
+				this.user_amount -= Amouunt ;
+				System.out.println("Successful Withdrwl amount");
 			}
 			
 		} catch (Exception e) {
