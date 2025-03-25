@@ -7,6 +7,7 @@ public class Bnak_User {
 	private String user_name ; 
 	private int user_amount ; 
 	private String user_address ;
+	
 	public Bnak_User(String user_name, int user_amount, String user_address) {
 		super();
 		this.user_name = user_name;
