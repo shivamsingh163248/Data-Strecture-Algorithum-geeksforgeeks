@@ -7,9 +7,11 @@ public class Bnak_User {
 	private String user_name ; 
 	private int user_amount ; 
 	private String user_address ;
+	private int account_number ; 
 	
-	public Bnak_User(String user_name, int user_amount, String user_address) {
-		super();
+	
+	public Bnak_User(String user_name, int user_amount, String user_address  , int account_number) {
+		this.account_number = account_number  ; 
 		this.user_name = user_name;
 		this.user_amount = user_amount;
 		this.user_address = user_address;
@@ -39,7 +41,7 @@ public class Bnak_User {
 		
 		// creating the try catch 
 		try {
-			// creating the condtion to checking the amount 
+			// creating the condition to checking the amount 
 			if (this.user_amount < Amouunt) {
 				// printing the not widrawl 
 				System.err.println("you have not a enouth ");	
@@ -55,6 +57,11 @@ public class Bnak_User {
 	// creating the method to print amount 
 	public int Current_Amount() {
 		return this.user_amount ; 
+	}
+
+
+	public int getAccount_number() {
+		return account_number;
 	}
 	
 	
