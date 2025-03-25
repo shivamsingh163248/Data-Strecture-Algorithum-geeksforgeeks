@@ -80,5 +80,20 @@ public class Bank {
 		}
 	}
 	
+	
+	private Bnak_User find_Account_number(int Account_number) {
+		
+		// creating the for each loop find the object 
+		for (Bnak_User bnak_User : user_account) {
+			
+			// creating the condition 
+			if (bnak_User.getAccount_number() == Account_number ) {
+				return bnak_User ; 
+			}	
+		}
+		System.out.println("Not found ");
+		return null ; 
+	}
+	
 
 }
