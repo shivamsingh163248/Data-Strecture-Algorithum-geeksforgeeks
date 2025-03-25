@@ -114,5 +114,21 @@ public class Bank {
 		}
 	}
 	
+	public void Withdraw(int Account  , int Amount ) {
+		
+		// creating  the exception hadaling 
+		try {
+			
+			// calling the function 
+			Bnak_User user = find_Account_number(Account);
+			// calling the function 
+			user.Widrawl_Amount(Amount);
+			
+		} catch (Exception e) {
+			
+			System.out.println("Not find account number ");
+		}
+	}
+	
 
 }
