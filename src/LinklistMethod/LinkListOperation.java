@@ -79,8 +79,9 @@ public class LinkListOperation<T>{
 		}
 		
 		//  creatng the copy of the head
+		Node<T>copy = head ; 
 		for (int i = 0; i < index; i++) {
-			
+			copy = copy.Next ; 
 		}
 		
 	}

@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Basic_concept"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
