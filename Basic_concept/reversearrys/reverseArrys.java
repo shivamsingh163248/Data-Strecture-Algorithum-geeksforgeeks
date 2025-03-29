@@ -1,5 +1,7 @@
 package reversearrys;
 
+import java.util.Stack;
+
 public class reverseArrys {
 	
 	// create the method 1 
@@ -41,7 +43,6 @@ public class reverseArrys {
 	// creating the another method 
 	// using the recursion 
 	public int[] reverse_arrays(int[]arr) {
-		
 		 return reverse_arrays_2(arr, 0, arr.length -1 ) ; 
 	}
 	
@@ -62,5 +63,23 @@ public class reverseArrys {
 	    return reverse_arrays_2(arr, start+1, end-1) ; 
 	    
 	}
+	
+	// now implement using the stack 
+	public int[] reverse_arrays_6(int[]arr ) {
+		
+		// creating the element push the element and pop the element 
+		Stack<Integer>val = new Stack<>();
+		
+		// creating the for loop to insurt the element 
+		for (Integer i : arr) {
+			val.push(i) ; 
+		}
+		// now pop the elemtn 
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = val.pop() ; 
+		}
+		return arr ; 
+	}
+	
 	
 }
