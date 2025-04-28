@@ -1,5 +1,8 @@
 package Distance_learning_Algorithum;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 //Node class for the tree
 class Node {
  int value;
