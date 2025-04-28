@@ -10,7 +10,9 @@ public class Adjesisy_list {
 		// creating the arrays list of the type of the edge
 		int v = 4 ; 
 		
-		ArrayList<Edge>gaph[] = new ArrayList[v] ; 
+		ArrayList<Edge>gaph[] = new ArrayList[v];
+		
+		
 		
 	}
 
