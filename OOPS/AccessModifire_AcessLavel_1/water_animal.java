@@ -1,6 +1,11 @@
 package AccessModifire_AcessLavel_1;
 
-public class water_animal {
+import AccessModifire_AcessLavel_2.Solar_System;
+
+import AccessModifire_AcessLavel_2.Universe;
+
+
+public class water_animal extends Universe {
 	
 	// creating the private inner class and try the access 
 	private class payment{
@@ -28,8 +33,20 @@ public class water_animal {
       payment new1 = new payment(0, null) ; 
       // calling the methoed for the testing 
       new1.printDetail();
+      
+     
      
 	}
+	
+
+	
+	
+	
+
+ 
+
+	
+	
    
 }
 
