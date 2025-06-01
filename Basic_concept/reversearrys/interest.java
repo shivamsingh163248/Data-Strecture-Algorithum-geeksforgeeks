@@ -5,19 +5,33 @@ import java.util.Scanner;
 public class interest {
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner(System.in) ; 
-		int n  = input.nextInt() ; 
-		float rate = input.nextFloat() ; 
-		int time = input.nextInt() ; 
+
+   // 	calling the function and then the initialization 
+		int a = sum(4,6) ; 
+		System.out.println(a);
+		
+		System.out.println("1"+1);
+		System.out.println(1+"1");
+		
+		// creating the heap memory 
+		String AdminUserName = "shivam" ; 
+		String SecondUserName = AdminUserName ; 
+		System.out.println(SecondUserName);
+		SecondUserName = "Saurabh" ; 
+		System.out.println(AdminUserName); ; 
+		System.out.println(SecondUserName);
 		
 		
-//		The input is principal=2000, rate=2.2 and time=4.
-//				So Simple interest=Principal*rate*time/100 hence 
-//				answer is 2000*2.2*4/100=176
-		
-	 double interest = (n*rate*time)/100 ; 
-	 
 	 
 
 }
+
+	private static int sum(int i, int j) {
+		// TODO Auto-generated method stub
+		int sum = i+j ; 
+		return sum;
+	}
+	
+	
+	
 }

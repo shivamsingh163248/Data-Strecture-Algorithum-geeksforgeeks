@@ -1,39 +1,29 @@
 package solveQuestion;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+class add{
+	int a ; 
+	int b  ; 
+	
+	// creating the constructor 
+	add(int a , int b){
+	this.a = a ; 
+	this.b = b ; 
+	}
+	
+	// now creating the function for the return the sum 
+	int sum() {
+		return a+b ; 
+	}
+}
 
 public class factorial {
 	
-	 public static List< Integer > printDivisors(int n) {
-	        // Write your code here
-			// creating list 
-			List<Integer>result = new ArrayList<>();
-			// creatng the loop 
-			for (int i = 1; i < n/2+1; i++) {
-			
-				if (n%i == 0) {
-					result.add(i) ; 
-				}
-			}
-			result.add(n) ; 
-			
-	    }
-	
-	
 	public static void main(String[] args) {
-		
-		Scanner input = new Scanner(System.in) ; 
-		int number = input.nextInt() ; 
-		int reuslt = 1 ; 
-		for (int i = number; i > 0 ; i--) {
-			reuslt *= i ; 
-		}
-		
-		
-		
-		
+		add fir = new add(6, 5) ; 
+		fir.a = 20 ; 
+		add seco = fir ; 
+		seco.a = 30 ; 
+		System.out.println(fir.a);
+		System.out.println(seco.a);
 	}
-
 }
