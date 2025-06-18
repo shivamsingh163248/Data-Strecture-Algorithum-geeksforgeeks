@@ -75,22 +75,7 @@ public static int[] swep(int a , int b , int lenght ) {
 	
 }
 
-public static  int[] sortedSquares(int[] nums) {
-	// find the length 
-	int num = nums.length ; 
-	// creating the new arrays 
-	int [] new_arr= new int[num] ;
-	 
-	
-	while () {
-		
-	}
-	// creating the two pointer 
-	
-	
-	
-    return nums ; 
-}
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
