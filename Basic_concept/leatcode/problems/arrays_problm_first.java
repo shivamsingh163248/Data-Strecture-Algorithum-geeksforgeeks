@@ -75,6 +75,45 @@ public static int[] swep(int a , int b , int lenght ) {
 	
 }
 
+public static  String generateTag(String caption) {
+	// create a string of the elelemt 
+	String result_caption = "#" ; 
+	int num = 0 ; 
+    for(int i = 0 ; i < caption.length() ; i++){
+    	// check the condition
+    	// check for the space 
+    	if (caption.charAt(i) == ' ' ) {
+			num = 1 ; 
+			continue ; 
+		}
+    	if (num == 1) {
+    		// check for the capitol later and small later 
+    		// check the latter is upperCase and lowercase 
+    		if (caption.charAt(i) == Character.toLowerCase(caption.charAt(i))) {
+				// change to upper 
+    		String ch = 	Character.toString(caption.charAt(i)).toUpperCase() ; 
+    		result_caption = result_caption+ch ; 
+    		num = 0 ; 
+    		continue ; 
+    			
+			}else {
+	    		String ch = 	Character.toString(caption.charAt(i)).toLowerCase() ; 
+	    		result_caption = result_caption+ch ; 
+	    		num = 0 ; 
+	    		continue  ; 
+			}
+    		
+		}
+    	
+    	// create  a normal string and add in the string 
+    	// using the method of the two string that convert into the string 
+		String ch = 	Character.toString(caption.charAt(i)) ; 
+		result_caption = result_caption+ch ; 
+        
+    }
+    return result_caption ; 
+}
+
 
 
 	public static void main(String[] args) {
@@ -82,6 +121,9 @@ public static int[] swep(int a , int b , int lenght ) {
 		int num[]  = {1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,0} ; 
 		 // System.out.println(findMaxConsecutiveOnes(num));
 		System.out.println(findMaxConsecutiveOnes(num));
+		
+		
+		System.out.println(generateTag("my name is Shivam singh"));
 
 	}
 
